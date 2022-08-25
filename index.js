@@ -1,3 +1,4 @@
+/* This function randomly picks rock, paper, or scissors */ 
 function getComputerChoice() {
     let myArray = [
         "rock",
@@ -11,6 +12,7 @@ function getComputerChoice() {
 let computerScore = 0;
 let playerScore = 0;
 
+/* This function cycles thru one round of gameplay */ 
 function playRound() {
     let playerSelection = prompt("What's your choice - rock, paper, or scissors?")
     playerSelection = playerSelection.toLowerCase().trim();
@@ -18,26 +20,27 @@ function playRound() {
     if (playerSelection === computerSelection) {
         alert("It's a tie!");
     } else if (playerSelection === "rock" && computerSelection === "paper") {
-        alert("You lose! Paper covers rock!")
-        return computerScore++
+        alert("You lose! Paper covers rock!");
+        return computerScore++;
     } else if (playerSelection === "rock" && computerSelection === "scissors") {
-        alert("You win! Rock smashes scissors!")
+        alert("You win! Rock smashes scissors!");
         return playerScore++;
     } else if (playerSelection === "paper" && computerSelection === "rock") {
-        alert("You win! Paper covers rock!")
-        return playerScore++
+        alert("You win! Paper covers rock!");
+        return playerScore++;
     } else if (playerSelection === "paper" && computerSelection === "scissors") {
-        alert("You lose! Scissors cut paper!")
+        alert("You lose! Scissors cut paper!");
         return computerScore++;
     } else if (playerSelection === "scissors" && computerSelection === "rock") {
-        alert("You lose! Rock smashes scissors!")
+        alert("You lose! Rock smashes scissors!");
         return computerScore++;
     } else if (playerSelection === "scissors" && computerSelection === "paper") {
-        alert("You win! Scissors cut paper!")
+        alert("You win! Scissors cut paper!");
         return playerScore++;
     }
 }
 
+/* This function cycles thru 5 rounds of gameplay and displays the winner */ 
 function game() {
     alert("Let's play rock, paper, scissors! Best out of 5 wins!")
     for (let i = 1; i <= 5; i++) {
