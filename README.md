@@ -1,1 +1,2 @@
 # rock-paper-scissors
+In this project, I used Javascript to recreate one of the most well-known games in the world - Roshambo (or Rock, Paper, Scissors)! Although it does not have a GUI yet, it does make use of prompts & alerts to display the gameplay in browser. The user enters their selection and the computer randomly chooses rock, paper, or scissors. The program tracks the score of each round and plays 5 rounds total. At the end, the winner is displayed! In the future, I hope to add a GUI to this so it is more visually appealing to the user. 
