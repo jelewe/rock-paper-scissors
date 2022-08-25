@@ -14,8 +14,18 @@ function playRound() {
     let computerSelection = getComputerChoice();
     if (playerSelection === computerSelection) {
         alert("It's a tie!");
-    } else {
-        alert("You lose!")
+    } else if (playerSelection === "rock" && computerSelection === "paper") {
+        alert("You lose! Paper covers rock!")
+    } else if (playerSelection === "rock" && computerSelection === "scissors") {
+        alert("You win! Rock smashes scissors!")
+    } else if (playerSelection === "paper" && computerSelection === "rock") {
+        alert("You win! Paper covers rock!")
+    } else if (playerSelection === "paper" && computerSelection === "scissors") {
+        alert("You lose! Scissors cut paper!")
+    } else if (playerSelection === "scissors" && computerSelection === "rock") {
+        alert("You lose! Rock smashes scissors!")
+    } else if (playerSelection === "scissors" && computerSelection === "paper") {
+        alert("You win! Scissors cut paper!")
     }
 }
 
