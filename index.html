@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
+    <title>Rock, Paper, Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = style.css>
+    <script src="index.js" defer></script>
 </head>
+
 <body>
-    <script src="index.js"></script>
+    <div class = "headerDiv">
+        <h1> Let's play Rock, Paper, Scissors!</h1>
+        First to 5 is the champion!
+
+        <img src = "rock-scissors-paper1.svg" style = height:300px;width:300px>
+    </div>
+<div class="content">
+    <div class = "bodyDiv">
+        <h2>Which will you choose?</h2>
+        <button id = "rock"><img src="rock-RPSWB.svg" style = height:75px;width:75px>Rock</button>
+        <button id = "paper"><img src="paper-RPSWB.svg" style = height:75px;width:75px>Paper</button>
+        <button id = "scissors"><img src="scissors-RPSWB.svg" style = height:75px;width:75px>Scissors</button>
+            <div class = "computerDiv"> 
+            </div>
+            <div class = "outcomeDiv"> 
+            </div>
+    </div>
+</div>
+<footer class = 'footer'>
+    <div class="scoreBox">
+            <h3>Score: </h3>
+        <div class="scoreDiv"> 
+        </div>
+    </div>
+</footer>
 </body>
 </html>
